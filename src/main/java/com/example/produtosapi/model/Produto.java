@@ -16,7 +16,7 @@ public class Produto {
     @Column
     private String nome;
 
-    @Id
+    @Column
     private String descricao;
 
     @Column
