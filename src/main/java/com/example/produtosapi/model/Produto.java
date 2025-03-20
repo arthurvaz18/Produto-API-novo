@@ -1,11 +1,25 @@
 package com.example.produtosapi.model;
 
+import jakarta.persistence.Column;
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+import jakarta.persistence.Table;
+
+@Entity
+@Table(name = "produto")
 public class Produto {
 
-
+    @Id
+    @Column(name ="id")
     private String id;
+
+    @Column
     private String nome;
+
+    @Id
     private String descricao;
+
+    @Column
     private Double preco;
 
     public String getId() {
