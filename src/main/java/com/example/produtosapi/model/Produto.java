@@ -10,7 +10,7 @@ import jakarta.persistence.Table;
 public class Produto {
 
     @Id
-    @Column(name ="id")
+    @Column
     private String id;
 
     @Column
